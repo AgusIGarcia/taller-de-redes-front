@@ -1,22 +1,25 @@
-import './App.css';
+import { CssBaseline } from "@mui/material";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./Components/Header";
+import Error404 from "./Pages/Error404";
+import Home from "./Pages/Home";
+import Personas from "./Pages/Personas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <CssBaseline>
+        <main className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element= {<Home />}/>
+            <Route path="/personas" element= {<Personas />}/>
+            <Route path="*" element= {<Error404 />}/>
+          </Routes>
+        </main>
+      </CssBaseline>
+    </Router>
   );
 }
 

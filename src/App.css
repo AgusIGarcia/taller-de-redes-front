@@ -1,38 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Playfair Display";
+}
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #b21c22;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 24em;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #b21c22;
+  font-size: calc(10px + 4vmin);
+  color: #f5bea4;
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  font-size: calc(10px + 1.75em);
+  color: #f5bea4;
+  margin: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h6 {
+  font-size: calc(10px + 1em);
+  color: #f5bea4;
 }
+
+p {
+  font-size: calc(7px + 1em);
+  color: #f5bea4;
+  margin-top: 2rem;
+}
+.ClearFix {
+  clear: both;
+}
+.LogoHome {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+}
+
+.Boton{
+  font-size: calc(10px + 1.75em);
+  margin: 4rem;
+  color: #b21c22;
+  padding: 1rem;
+  background-color: #f5bea4;
+  border: 0px;
+  border-radius: 0%;
+}
+
+.TextField{
+  color:blue;
+}
+
+
