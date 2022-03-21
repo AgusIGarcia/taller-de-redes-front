@@ -5,7 +5,7 @@ var AccionesHTTP = {
 
 class API {
   constructor() {
-    this.ipBackend = "http://54.197.19.122";
+    this.ipBackend = "http://3.84.31.69/";
     this.corsAnywhere = "https://cors-anywhere.herokuapp.com/";
     this.lista = [];
   }
